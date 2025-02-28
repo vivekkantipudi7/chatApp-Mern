@@ -16,6 +16,7 @@ function Signup() {
   // watch the password and confirm password fields
   const password = watch("password", "");
   const confirmPassword = watch("confirmPassword", "");
+  console.log(confirmPassword);
 
   const validatePasswordMatch = (value) => {
     return value === password || "Passwords do not match";
