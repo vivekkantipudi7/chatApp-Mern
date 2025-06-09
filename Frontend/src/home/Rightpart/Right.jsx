@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import Chatuser from "./Chatuser";
 import Messages from "./Messages";
 import Typesend from "./Typesend";
-import useConversation from "../../zustand/useConversation.js";
-import { useAuth } from "../../context/AuthProvider.jsx";
+import useConversation from "../../zustand/useConversation.jsx";
+import { useAuth } from "../../context/Authprovider.jsx";
 import { CiMenuFries } from "react-icons/ci";
 
 function Right() {
@@ -51,7 +51,7 @@ const NoChatSelected = () => {
           <h1 className="text-center">
             Welcome{" "}
             <span className="font-semibold text-xl">
-              {authUser.user.fullname}
+              {authUser.user.fullName}
             </span>
             <br />
             No chat selected, please start conversation by selecting anyone to

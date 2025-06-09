@@ -12,7 +12,7 @@ function Search() {
     e.preventDefault();
     if (!search) return;
     const conversation = allUsers.find((user) =>
-      user.fullname?.toLowerCase().includes(search.toLowerCase())
+      user.fullName?.toLowerCase().includes(search.toLowerCase())
     );
     if (conversation) {
       setSelectedConversation(conversation);

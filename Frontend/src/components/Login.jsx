@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useAuth } from "../context/AuthProvider";
+import { useAuth } from "../context/Authprovider.jsx";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 
@@ -40,12 +40,12 @@ function Login() {
       <div className="flex h-screen items-center justify-center">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="border border-white px-6 py-2 rounded-md space-y-3 w-96"
+          className="border border-black px-6 py-2 rounded-md space-y-3 w-96"
         >
           <h1 className="text-2xl text-center">
             Chat<span className="text-green-500 font-semibold">App</span>
           </h1>
-          <h2 className="text-xl text-white font-bold">Login</h2>
+          <h2 className="text-xl text-Black font-bold">Login</h2>
           <br />
 
           {/* Email */}
