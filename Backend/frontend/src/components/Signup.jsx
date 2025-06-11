@@ -24,7 +24,7 @@ function Signup() {
 
   const onSubmit = async (data) => {
     const userInfo = {
-      fullname: data.fullname,
+      fullName: data.fullName,
       email: data.email,
       password: data.password,
       confirmPassword: data.confirmPassword,
@@ -57,7 +57,7 @@ function Signup() {
           </h1>
           <h2 className="text-xl text-black font-bold">Signup</h2>
           <br />
-          {/* Fullname */}
+          {/* fullName */}
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,11 +70,11 @@ function Signup() {
             <input
               type="text"
               className="grow"
-              placeholder="Fullname"
-              {...register("fullname", { required: true })}
+              placeholder="fullName"
+              {...register("fullName", { required: true })}
             />
           </label>
-          {errors.fullname && (
+          {errors.fullName && (
             <span className="text-red-500 text-sm font-semibold">
               This field is required
             </span>
